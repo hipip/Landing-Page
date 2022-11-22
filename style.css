@@ -1,0 +1,20 @@
+:root {
+  --hero-bg: #1f2937;
+  --footer-bg: #1f2937;
+  --hero-title-size: 48px;
+  --hero-title-color: #f9faf8;
+  --hero-sub-title-size: 18px;
+  --hero-sub-title-color: #e5e7eb;
+  --call-to-action-color: #3882f6;
+  --info-section-text-size: 36px;
+  --info-section-text-color: #1f2937;
+  --quote-section-bg: #e5e7eb;
+  --quote-section-text-color: #1f2937;
+  --quote-section-text-size: 36px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
