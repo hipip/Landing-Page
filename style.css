@@ -1,7 +1,7 @@
 :root {
   --hero-bg: #1f2937;
   --footer-bg: #1f2937;
-  --hero-title-size: 48px;
+  --hero-title-size: 54px;
   --hero-title-color: #f9faf8;
   --hero-sub-title-size: 18px;
   --hero-sub-title-color: #e5e7eb;
@@ -13,8 +13,102 @@
   --quote-section-text-size: 36px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling the Hero Section */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--hero-bg);
+}
+
+.hero-header {
+  padding: 25px 50px;
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 30px;
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+}
+
+.nav-item:first-child a {
+  color: #f9faf8;
+  font-size: 24px;
+}
+
+.nav-item a {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-content {
+  gap: 50px;
+  margin: 60px 30px;
+  padding: 25px 50px;
+  flex: auto;
+  display: flex;
+}
+
+.hero-left {
+  display: flex;
+  flex-basis: 50%;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.hero-title {
+  font-size: var(--hero-title-size);
+  color: var(--hero-title-color);
+  font-weight: 900;
+}
+
+.hero-sub-title {
+  line-height: 30px;
+  font-size: var(--hero-sub-title-size);
+  color: var(--hero-sub-title-color);
+  font-weight: 100;
+}
+
+.hero-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  background-color: var(--call-to-action-color);
+  padding: 10px 30px;
+  font-size: 18px;
 }
