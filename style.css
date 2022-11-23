@@ -1,6 +1,5 @@
 :root {
-  --hero-bg: #272727;
-  --footer-bg: #1f2937;
+  --main-color: #272727;
   --hero-title-size: 56px;
   --hero-title-color: #ffe0cc;
   --hero-sub-title-size: 18px;
@@ -23,6 +22,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: var(--hero-title-color);
 }
 
 ul {
@@ -41,13 +41,14 @@ img {
 /* Styling the Hero Section */
 
 .hero-section {
+  padding: 20px 80px;
   display: flex;
   flex-direction: column;
-  background-color: var(--hero-bg);
+  background-color: var(--main-color);
 }
 
 .hero-header {
-  padding: 30px 20px;
+  padding: 30px 40px;
 }
 
 .nav-container {
@@ -55,7 +56,7 @@ img {
 }
 
 .nav-item {
-  margin: 0 60px;
+  margin: 0 40px;
 }
 
 .nav-item:first-child {
@@ -104,15 +105,17 @@ img {
 }
 
 .hero-left {
+  padding-right: 40px;
   display: flex;
   flex: 1 0 50%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
 }
 
 .hero-title {
+  text-transform: uppercase;
   font-size: var(--hero-title-size);
   color: var(--hero-title-color);
   font-weight: 900;
@@ -145,12 +148,15 @@ img {
 }
 
 .hero-right {
+  padding-left: 40px;
   flex: auto;
   width: 100%;
   height: auto;
   background-color: palegoldenrod;
   background-size: cover;
   background-position: center;
-  box-shadow: 15px 15px 0 0 var(--call-to-action-color);
+  box-shadow: 10px 10px 0 5px var(--call-to-action-color), -10px -10px 0 5px var(--hero-title-color);
   background-image: url("https://images.pexels.com/photos/688830/pexels-photo-688830.jpeg");
 }
+
+/* Finished Styling hero Section */
