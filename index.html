@@ -6,99 +6,101 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <script src="https://kit.fontawesome.com/46c8a1eb9e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="root">
-    <div class="hero-section">
+    <section class="hero-section">
       <div class="hero-header">
         <ul class="nav-container">
-          <li class="nav-item"><a href="#">Header Logo</a></li>
-          <li class="nav-item"><a href="#">Link One</a></li>
-          <li class="nav-item"><a href="#">Link Two</a></li>
-          <li class="nav-item"><a href="#">Link Three</a></li>
+          <li class="nav-item"><a href="#">THE 4 SEASONS</a></li>
+          <li class="nav-item active"><a href="#">Autumn</a></li>
+          <li class="nav-item"><a href="#">Winter</a></li>
+          <li class="nav-item"><a href="#">Spring</a></li>
+          <li class="nav-item"><a href="#">Summer</a></li>
         </ul>
       </div>
       <div class="hero-content">
         <div class="hero-left">
-          <h1 class="hero-title">Welcome, it is the beautiful season of Autumn again</h1>
+          <h1 class="hero-title">It's Autumn, The year's last loveliest smile</h1>
           <p class="hero-sub-title">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, illo? Adipisci, corrupti accusamus harum
-            reprehenderit quas itaque,
-            magnam nobis in asperiores, possimus non. Beatae perferendis sequi animi inventore, maiores accusantium
-            necessitatibus deserunt ipsum
-            doloremque aliquam nesciunt earum, assumenda laborum illum, ad impedit laudantium! Tempora quod quae, maxime
-            nesciunt at id!
+            Dreaming of pumpkin lattes, caramel apples, turkey, and mashed potatoes? So are we! It's finally Autumn, a
+            favorite season to many who enjoy the fun foods, festivities, and cooler weather, the 'Season of mists and
+            mellow fruitfulness', autumn is a season famous for its harvest times, turning leaves, cooling temperatures
+            and darkening nights.
           </p>
           <div>
-          <button class="hero-btn">Learn More !</button>
-        </div>
+            <button class="hero-btn">Learn More !</button>
+          </div>
         </div>
         <div class="hero-right">
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="info-section">
+    <section class="info-section">
       <p class="info-section-header">What's Autumn Known For ?</p>
       <div class="items">
         <div class="item">
-          <img src="" alt="" class="item-img" />
+          <div class="fa-solid fa-leaf item-img"></div>
           <p class="item-subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nesciunt quidem distinctio aliquid
-            blanditiis minima?
+            One of the most stunning signs of autumn is the turning of the leaves. The shorter days are a sign to trees
+            to begin to prepare for winter.
           </p>
         </div>
         <div class="item">
-          <img src="" alt="" class="item-img" />
+          <i class="fa-sharp fa-solid fa-palette item-img"></i>
           <p class="item-subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nesciunt quidem distinctio aliquid
-            blanditiis minima?
+            Chlorophyll is the chemical which makes tree leaves green and as it declines other chemicals become more
+            prominent in the leaves.
           </p>
         </div>
         <div class="item">
-          <img src="" alt="" class="item-img" />
+          <i class="fa-solid fa-moon item-img"></i>
           <p class="item-subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nesciunt quidem distinctio aliquid
-            blanditiis minima?
+            The full moon in the fall that occurs during the equinox is much brighter (almost orange) and rises much
+            earlier than a typical full moon.
           </p>
         </div>
         <div class="item">
-          <img src="" alt="" class="item-img" />
+          <i class="fa-solid fa-child item-img"></i>
           <p class="item-subtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nesciunt quidem distinctio aliquid
-            blanditiis minima?
+            According to research children born in the fall may be more likely to live longer and up to 100 years and
+            it's not pseudoscience.
           </p>
         </div>
       </div>
-    </div>
+  </div>
+  </section>
 
-    <div class="quote-section">
-      <h1 class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, blanditiis quae quidem recusandae
-        animi perferendis.</h1>
-      <p class="quote-author">- Khiwa Fachiko</p>
-    </div>
+  <section class="quote-section">
+    <q class="quote">Spring is beautiful, and summer is perfect for vacations, but autumn brings a longing to get away
+      from the unreal things of life, out into the forest at night with a campfire and the rustling leaves.</q>
+    <p class="quote-author">- Margaret Elizabeth Sangster</p>
+  </section>
 
-    <div class="action-section">
-      <div class="action-container">
-        <p class="action-title">Call to action! it's time!</^>
+  <section class="action-section">
+    <div class="action-container">
+      <div class="action-text">
+        <p class="action-title">Want to camp in the wildest forsests with us ?</^>
         <p class="action-sub-title">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores reiciendis ad saepe provident quasi nostrum?
-          Temporibus cumque aperiam
-          necessitatibus molestiae.
+          Sign up right now and you'll never regret it , you'll have an amazing adventure with the gang there !
         </p>
       </div>
       <button class="action-btn">Sign Up</button>
     </div>
 
-    <div class="footer">
-      <p>
-        Copyright © The Odin Project
-        <span class="year"></span>
-      </p>
-    </div>
-  </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      Copyright © The Odin Project
+      <span class="year"></span>
+    </p>
+  </footer>
+
 </body>
 <script>
   document.querySelector(".year").innerHTML = new Date().getFullYear();
