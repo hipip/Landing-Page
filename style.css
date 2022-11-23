@@ -1,11 +1,11 @@
 :root {
-  --hero-bg: #1f2937;
+  --hero-bg: #272727;
   --footer-bg: #1f2937;
-  --hero-title-size: 54px;
-  --hero-title-color: #f9faf8;
+  --hero-title-size: 56px;
+  --hero-title-color: #ffe0cc;
   --hero-sub-title-size: 18px;
-  --hero-sub-title-color: #e5e7eb;
-  --call-to-action-color: #3882f6;
+  --hero-sub-title-color: #cfc3bb;
+  --call-to-action-color: #d8462c;
   --info-section-text-size: 36px;
   --info-section-text-color: #1f2937;
   --quote-section-bg: #e5e7eb;
@@ -47,7 +47,7 @@ img {
 }
 
 .hero-header {
-  padding: 25px 50px;
+  padding: 30px 20px;
 }
 
 .nav-container {
@@ -55,7 +55,7 @@ img {
 }
 
 .nav-item {
-  margin: 0 30px;
+  margin: 0 60px;
 }
 
 .nav-item:first-child {
@@ -68,25 +68,48 @@ img {
 }
 
 .nav-item a {
+  position: relative;
+  overflow: visible;
+  z-index: 2;
   font-size: 18px;
   color: #e5e7eb;
 }
 
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  transform-origin: center;
+  transform: scaleX(0);
+  z-index: -1;
+  background-color: var(--call-to-action-color);
+  transition: 0.3s ease-in-out;
+}
+
+.nav-item a:hover::before {
+  transform: scaleX(1.3);
+}
+
 .hero-content {
+  padding: 40px;
+  margin: 40px;
   gap: 50px;
-  margin: 60px 30px;
-  padding: 25px 50px;
   flex: auto;
   display: flex;
 }
 
 .hero-left {
   display: flex;
-  flex-basis: 50%;
-  gap: 20px;
+  flex: 1 0 50%;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .hero-title {
@@ -96,19 +119,38 @@ img {
 }
 
 .hero-sub-title {
+  text-align: justify;
   line-height: 30px;
   font-size: var(--hero-sub-title-size);
   color: var(--hero-sub-title-color);
   font-weight: 100;
+  line-height: 40px;
 }
 
 .hero-btn {
   cursor: pointer;
   border: none;
   border-radius: 10px;
-  color: white;
+  color: #ffecdf;
   font-weight: 600;
   background-color: var(--call-to-action-color);
-  padding: 10px 30px;
+  padding: 12px 40px;
   font-size: 18px;
+  margin-right: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.hero-btn:hover {
+  box-shadow: 0 0 50px -8px var(--call-to-action-color);
+}
+
+.hero-right {
+  flex: auto;
+  width: 100%;
+  height: auto;
+  background-color: palegoldenrod;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 15px 15px 0 0 var(--call-to-action-color);
+  background-image: url("https://images.pexels.com/photos/688830/pexels-photo-688830.jpeg");
 }
